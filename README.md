@@ -14,9 +14,7 @@ Typically, the individual neurons in a DNN compute the dot product between their
 
 Here, `∠(x, w)` returns the angle between the vectors **x** and **w**.
 
-In this work, we seek to improve the interpretability of DNNs by promoting weight-input alignment during optimisation. 
-
-To achieve this, we propose the ***B-cos transform***:
+In this work, we seek to improve the interpretability of DNNs by promoting weight-input alignment during optimisation. To achieve this, we propose the ***B-cos transform***:
 
      B-cos(x; w) = ||ŵ|| ||x|| |c(x, ŵ)|ᴮ × sgn (c(x, ŵ)).`
 
@@ -42,9 +40,7 @@ In such a model, each layer lⱼ typically computes:
 
 with aⱼ the input to layer j, φ a non-linear activation function (e.g., ReLU), and the row k of Wⱼ given by the weight vector **w**ᵏⱼ of the k-th neuron in that layer. 
 
-A corresponding **B-cos network** f with layers lⱼ can be formulated in exactly the same way, with the only difference being that every dot product (here between rows of Wⱼ and the input aⱼ) is replaced by the B-cos transform. 
-
-In matrix form, this equates to:
+A corresponding **B-cos network** f with layers lⱼ can be formulated in exactly the same way, with the only difference being that every dot product (here between rows of Wⱼ and the input aⱼ) is replaced by the B-cos transform. In matrix form, this equates to:
 
        lⱼ(aⱼ; Wⱼ) = |c(aⱼ; Ŵⱼ)|^(B-1) × (Ŵⱼ aⱼ),`
 
