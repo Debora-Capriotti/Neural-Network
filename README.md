@@ -6,7 +6,7 @@ The B-cos transform is designed to be compatible with existing architectures and
 
 ---
 
-**The B-cos transform**
+**The B-cos Transform**
 
 Typically, the individual neurons in a DNN compute the dot product between their weights **w** and an input **x**:
 
@@ -24,7 +24,7 @@ Note that this only introduces minor changes with respect to the first equation;
 
 ---
 
-**B-cos networks**
+**B-cos Networks**
 
 The B-cos transform is designed as a *drop-in* replacement of the linear transform, i.e., it can be used in exactly the same way.
 
