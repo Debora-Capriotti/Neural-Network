@@ -14,7 +14,9 @@ Typically, the individual neurons in a DNN compute the dot product between their
 
 Here, `∠(x, w)` returns the angle between the vectors **x** and **w**.
 
-In this work, we seek to improve the interpretability of DNNs by promoting weight-input alignment during optimisation. To achieve this, we propose the ***B-cos transform***:
+In this work, we seek to improve the interpretability of DNNs by promoting weight-input alignment during optimisation. 
+
+To achieve this, we propose the ***B-cos transform***:
 
      B-cos(x; w) = ||ŵ|| ||x|| |c(x, ŵ)|ᴮ × sgn (c(x, ŵ)).`
 
@@ -49,3 +51,5 @@ In matrix form, this equates to:
 Here, the power, absolute value, and `×` operators are applied element-wise, `c(aⱼ; Ŵⱼ)` computes the cosine similarity between input aⱼ and the rows of Ŵⱼ, and the hat operator scales the rows of Ŵⱼ to unit norm. 
 
 ---
+
+The code is present in the Neural Networks.ipynb file, and to run it, you only need to click on *Runtime* and then on *Run All*.
